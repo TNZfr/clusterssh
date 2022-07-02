@@ -2,7 +2,7 @@
 Server farm tool management using SSH
 
 Created before Ansible, this tool is oriented command line and OS management.
-What you find ni ClusterSSH, you won't find in Ansible :
+What you'll find in ClusterSSH you won't find in Ansible :
 * Dynamic inventory
 * Account group management
 * Server farm security management (key management, access monitoring ...)
