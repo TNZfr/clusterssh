@@ -1,4 +1,4 @@
-# clusterssh
+# ClusterSSH
 Server farm tool management using SSH
 
 Created before Ansible, this tool is oriented command line and OS management.</br>
