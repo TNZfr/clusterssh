@@ -1,7 +1,7 @@
 # clusterssh
 Server farm tool management using SSH
 
-Created before Ansible, this tool is oriented command line and OS management.
+Created before Ansible, this tool is oriented command line and OS management.</br>
 What you'll find in ClusterSSH you won't find in Ansible :
 * Dynamic inventory
 * Account group management
