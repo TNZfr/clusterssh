@@ -64,7 +64,7 @@ ParsePattern ()
     CS_CurrentDir=$PWD
 
     # Si pas de referentiel courant -> SORTIE
-    [ ! -L $CS_CURRENT ] && printf "\033[31mNo current referetial defined\033[m, Cf cls SetCurrentRef\n" && exit 1
+    [ ! -L $CS_CURRENT ] && printf "\033[31mNo current referential defined\033[m, Cf cls SetCurrentRef\n" && exit 1
 
     # Liste des serveurs repondant au pattern
     cd $CS_CURRENT/node
