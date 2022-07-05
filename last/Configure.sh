@@ -55,7 +55,7 @@ CreateConfiguration ()
 # Variables deduites ou variables internes non parametrables
 #-----------------------------------------------------------
 export CS_LOCAL=$CS_RCDIR
-export CS_CURRENT=\$HOME/referentiel
+export CS_CURRENT=$CS_RCDIR/ref-\$PPID
 export CS_MODULE=\$CS_EXE/module
 " >> $CS_RC
 

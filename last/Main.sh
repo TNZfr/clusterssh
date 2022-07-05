@@ -37,6 +37,20 @@ function LoadConfiguration
 
     # Chargement de la configuration
     . $CS_RC
+
+    # Gestion multi utilisateurs
+    if [ ! -L $CS_CURRENT ]
+    then
+	Last=$(cd $CS_LOCAL; ls -1dtr ref-* 2>/dev/null|tail -1)
+	if [ "$Last" != "" ]
+	then
+	    ln -s $(readlink -f $CS_LOCAL/$Last) $CS_CURRENT
+	    for RefPID in $(cd $CS_LOCAL; ls -1d ref-*|cut -d'-' -f2)
+	    do
+		[ ! -d /proc/$RefPID ] && rm -f $CS_LOCAL/ref-$RefPID
+	    done
+	fi
+    fi
 }
 
 #-------------------------------------------------------------------------------
