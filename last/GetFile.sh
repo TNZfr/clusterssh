@@ -51,7 +51,7 @@ do
     User=$(echo $UserNode|cut -d@ -f1)
     Node=$(echo $UserNode|cut -d@ -f2)
 
-    ehco "-------------------------------------------------------------------------"
+    echo  "-------------------------------------------------------------------------"
     print "\033[34;47m Node            \033[m : $Node"
     print "\033[34;47m User            \033[m : $User"
     print "\033[34;47m Remote file     \033[m : $RemoteFile"
