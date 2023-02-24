@@ -15,3 +15,5 @@ As usual here, installation instructions are :
 * Download tar.gz in your $HOME
 * Execute : tar xf cls*.tar.gz
 * Enjoy !
+
+![](https://github.com/TNZfr/clusterssh/blob/main/Command-Overview.png)
